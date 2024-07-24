@@ -1,0 +1,70 @@
+avg 1000 ASYNC migration key time :
+0.0393509864 == 30ms
+avg 10000 ASYNC migration key time :
+0.296903 == 300ms
+avg 1 Get request time after 10000 migration Cmd Immediately on Sender Server :
+0.0230 
+avg 1 Get request time after 10000 migration Cmd Immediately on Reciever Server:
+Time taken for migration: 0.025204
+
+
+avg 1000 SYNC migration key time :
+0.011317491531 
+avg 10000 SYNC migration key time :
+0.070024 
+avg 1 Get request time after 10000 migration Cmd Immediately on Sender Server :
+0.04032 
+avg 1 Get request time after 10000 migration Cmd Immediately on Reciever Server:
+Time taken for migration: 0.074471
+
+
+Results with 40 Characters per key, values 10,000 keys :
+
+avg 1 Get request time after 10000 migration Cmd Immediately on Reciever Server:
+Time taken for migration: 0.0265831
+
+
+
+
+avg 1 Get request time after 10000 migration Cmd Immediately on Reciever Server:
+Time taken for migration: 0.0742919
+
+
+
+
+Results with 1kb state / key , 1000 keys :
+
+Time taken to transfer :
+SYNC : Time taken for migration: 0.01440834
+ASYNC : Time taken for migration: 0.0429520606
+
+
+Results with 1 kb state / key , 1000 keys , time it takes for a single get request by another client :
+SYNC : Time taken for migration: 0.016059
+ASYNC : Time taken for migration: 0.005371332
+
+Results with 1 kb state / key , 1000 keys , time it takes for a single get request by another client on Reciever end :
+SYNC : Time taken for migration: 0.01679706
+ASYNC : Time taken for migration: 0.0059585
+
+
+Results with 1MB state / key , 1000 keys :
+
+Time taken to transfer :
+SYNC : Time taken for migration: 2.69856
+ASYNC : Time taken for migration: 3.51655
+
+Results with 1 Mb state / key , 1000 keys , time it takes for a single get request by another client :
+SYNC : Time taken for migration: 3.119852542
+ASYNC : Time taken for migration: 0.005755424
+
+Results with 1 Mb state / key , 1000 keys , time it takes for a single get request by another client on Reciever end :
+SYNC : Time taken for migration: 3.123016
+ASYNC : Time taken for migration: 0.00584319
+
+THREAD RESULTS :
+1000 1kb :
+ASYNC : Time taken for migration: 0.0071263 seconds
+time it takes for whole migration :
+Time taken for migration: 0.04271364
+Time taken for migration: 2.327429533
