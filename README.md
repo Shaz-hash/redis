@@ -2,7 +2,7 @@ This README is just a fast *quick start* document. You can find more detailed do
 
 What is Redis?
 --------------
-
+wwww
 Redis is often referred to as a *data structures* server. What this means is that Redis provides access to mutable data structures via a set of commands, which are sent using a *server-client* model with TCP sockets and a simple protocol. So different processes can query and modify the same data structures in a shared way.
 
 Data structures implemented into Redis have a few special properties:
