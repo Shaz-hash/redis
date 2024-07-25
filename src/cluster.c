@@ -1388,7 +1388,7 @@ void migrateCommand(client *c)
     int num_threads = 5;
     if(num_keys < num_threads)
     {
-        num_threads == num_keys;
+        num_threads = num_keys;
     }
     pthread_t threads[num_threads];
     ioCmdStruct ioargs[num_threads];
